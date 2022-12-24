@@ -1,5 +1,5 @@
 import random
-from src.math_formula.lcg import LCG
+from src.models.lcg import LCG
 
 
 class MusicGenerator:
