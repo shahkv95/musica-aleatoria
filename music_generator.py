@@ -31,3 +31,15 @@ class MusicGenerator:
             chord = self.chords[chord_index]
             progression.append(chord)
         return progression
+
+    def generate_song(self, num_repeats):
+        """
+        Generates a song structure by repeating a melody and chord progression.
+        """
+        song = []
+        for _ in range(num_repeats):
+            melody = self.generate_melody(16)
+            progression = self.generate_chord_progression(4)
+            song.extend(melody)
+            song.extend(progression)
+        return song
