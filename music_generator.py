@@ -19,3 +19,15 @@ class MusicGenerator:
             pitch = self.pitches[pitch_index]
             melody.append(pitch)
         return melody
+
+    def generate_chord_progression(self, num_chords):
+        """
+        Generates a random chord progression by selecting random chords from the list of chord symbols.
+        """
+        progression = []
+        for _ in range(num_chords):
+            chord_index = self.lcg.generate(
+                random.randint(0, len(self.chords))) % len(self.chords)
+            chord = self.chords[chord_index]
+            progression.append(chord)
+        return progression
