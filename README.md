@@ -1,6 +1,6 @@
 # lcg-music-gen
 
-Code generates random music using a linear congruential generator (LCG) to select pitches and chords from predefined lists.
+Code generates random music using linear congruential generator (LCG) to select pitches & chords from predefined lists. LCG generates random integers based on modulus, multiplier, increment. Integers used to index lists and select pitches/chords. Pitches/chords combined to create melody/chord progression, repeated to form song structure. Code also defines functions for LCG, melody, chord progression, song structure.
 
 ## Setting up the project
 
