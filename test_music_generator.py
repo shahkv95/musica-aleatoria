@@ -1,9 +1,9 @@
-from src.music_generator import MusicGenerator
+from src.music_generator.music_generator import MusicGenerator
 
 
 def test_lcg_class_exists():
     '''Test that the LCG class can be imported from the music_generator module and that an instance of the LCG class can be created.'''
-    from src.music_generator import LCG
+    from src.math_formula.lcg import LCG
     lcg = LCG(123, 456, 789)
     assert isinstance(lcg, LCG)
 
