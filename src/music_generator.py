@@ -1,5 +1,5 @@
 import random
-from lcg import LCG
+from src.lcg import LCG
 
 
 class MusicGenerator:

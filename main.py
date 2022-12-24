@@ -1,4 +1,4 @@
-import music_generator
+import src.music_generator as music_generator
 
 
 def main():
