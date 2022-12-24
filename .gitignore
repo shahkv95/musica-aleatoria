@@ -1,5 +1,10 @@
 # Object file
 *.o
 
-# Ada Library Information
-*.ali
+# virtual environment
+.venv
+
+# pycache
+.pycache
+__pycache__
+
