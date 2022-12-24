@@ -8,3 +8,6 @@
 .pycache
 __pycache__
 
+# vs code setting
+.vscode
+
