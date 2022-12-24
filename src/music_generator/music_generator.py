@@ -1,14 +1,15 @@
 import random
+from typing import List, Tuple, Union
 from src.models.lcg import LCG
 
 
 class MusicGenerator:
-    def __init__(self, pitches, chords):
+    def __init__(self, pitches: List[str], chords: List[str]) -> None:
         self.pitches = pitches
         self.chords = chords
         self.lcg = LCG(len(pitches), 1103515245, 12345)
 
-    def generate_melody(self, num_notes):
+    def generate_melody(self, num_notes: int) -> List[str]:
         """
         Generates a random melody by selecting random notes from the list of pitches.
         """
@@ -20,7 +21,7 @@ class MusicGenerator:
             melody.append(pitch)
         return melody
 
-    def generate_chord_progression(self, num_chords):
+    def generate_chord_progression(self, num_chords: int) -> List[str]:
         """
         Generates a random chord progression by selecting random chords from the list of chord symbols.
         """
@@ -32,7 +33,7 @@ class MusicGenerator:
             progression.append(chord)
         return progression
 
-    def generate_song(self, num_repeats):
+    def generate_song(self, num_repeats: int) -> List[Union[str, Tuple[str, str]]]:
         """
         Generates a song structure by repeating a melody and chord progression.
         """
