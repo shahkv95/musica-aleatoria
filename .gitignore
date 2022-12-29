@@ -11,3 +11,4 @@ __pycache__
 # vs code setting
 .vscode
 
+*.egg-info
