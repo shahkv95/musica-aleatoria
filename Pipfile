@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 pytest = "*"
+pygame = "*"
+wave = "*"
 
 [dev-packages]
 
